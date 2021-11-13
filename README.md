@@ -85,14 +85,24 @@ Anggota kelompok:
 8. Loguetown digunakan sebagai client Proxy agar transaksi jual beli dapat terjamin keamanannya, juga untuk mencegah kebocoran data transaksi.Pada Loguetown, proxy harus bisa diakses dengan nama jualbelikapal.yyy.com dengan port yang digunakan adalah 5000.
     - Install squid pada Water7.
     - Tambahkan konfigurasi berikut pada ```/etc/squid/squid.conf```.
-      
+      ![image](https://user-images.githubusercontent.com/90237196/141643390-26346e87-900f-4c91-8a7d-a91254cc38b6.png)
     - Restart squid.
     - Aktifkan proxy pada Loguetown, kemudian cek apakah konfigurasi telah berhasil dengan ```env | grep -i proxy```.
-    
     - Akses http://jualbelikapald11.com pada Loguetown.
-    
+      ![image](https://user-images.githubusercontent.com/90237196/141643418-a599330a-3dcd-419f-adf2-b60010b352ae.png)  
 
 9. Agar transaksi jual beli lebih aman dan pengguna website ada dua orang, proxy dipasang autentikasi user proxy dengan enkripsi MD5 dengan dua username, yaitu luffybelikapalyyy dengan password luffy_yyy dan zorobelikapalyyy dengan password zoro_yyy 
+    - Buat username dan password di Water7.
+      ```
+      httpasswd -c /etc/squid/passwd luffybelikapald11
+      password: luffy_d11
+      
+      httpasswd -c /etc/squid/passwd zorobelikapald11
+      password: zoro_d11
+      ```
+    - Tambahkan konfigurasi berikut pada ```/etc/squid/squid.conf```.
+      ![image](https://user-images.githubusercontent.com/90237196/141643751-1d5cdb4c-2971-4b5b-acc7-7f05997b532a.png)
+    - Akses http://jualbelikapald11.com pada Loguetown.
 
 10. Transaksi jual beli tidak dilakukan setiap hari, oleh karena itu akses internet dibatasi hanya dapat diakses setiap hari Senin-Kamis pukul 07.00-11.00 dan setiap hari Selasa-Jum’at pukul 17.00-03.00 keesokan harinya (sampai Sabtu pukul 03.00)
 
