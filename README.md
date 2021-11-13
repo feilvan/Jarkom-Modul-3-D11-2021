@@ -108,7 +108,7 @@ Anggota kelompok:
     - Tambahkan konfigurasi berikut pada file ```/etc/squid/squid.conf```.
     ![image](https://user-images.githubusercontent.com/90237196/141644719-0bc0dd91-70a5-4266-b5fd-b87f7820d484.png)
     - Tambahkan konfigurasi berikut pada file ```/etc/squid/acl.conf```.
-    
+    ![image](https://user-images.githubusercontent.com/90237196/141646928-6ab503d2-5210-4fa8-882b-cb501c7a46a0.png)
     - Akses http://jualbelikapald11.com dengan command ```lynx jualbelikapald11.com```
     ![image](https://user-images.githubusercontent.com/90237196/141645575-ae870d1b-62a3-4b94-8fde-119f6aede96c.png) 
 
