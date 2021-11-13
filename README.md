@@ -85,10 +85,13 @@ Anggota kelompok:
 8. Loguetown digunakan sebagai client Proxy agar transaksi jual beli dapat terjamin keamanannya, juga untuk mencegah kebocoran data transaksi.Pada Loguetown, proxy harus bisa diakses dengan nama jualbelikapal.yyy.com dengan port yang digunakan adalah 5000.
     - Install squid pada Water7.
     - Tambahkan konfigurasi berikut pada ```/etc/squid/squid.conf```.
+    
     ![image](https://user-images.githubusercontent.com/90237196/141643390-26346e87-900f-4c91-8a7d-a91254cc38b6.png)
+    
     - Restart squid.
     - Aktifkan proxy pada Loguetown, kemudian cek apakah konfigurasi telah berhasil dengan ```env | grep -i proxy```.
     - Akses http://jualbelikapald11.com pada Loguetown.
+    
     ![image](https://user-images.githubusercontent.com/90237196/141643418-a599330a-3dcd-419f-adf2-b60010b352ae.png)  
 
 9. Agar transaksi jual beli lebih aman dan pengguna website ada dua orang, proxy dipasang autentikasi user proxy dengan enkripsi MD5 dengan dua username, yaitu luffybelikapalyyy dengan password luffy_yyy dan zorobelikapalyyy dengan password zoro_yyy 
@@ -101,15 +104,22 @@ Anggota kelompok:
       password: zoro_d11
       ```
     - Tambahkan konfigurasi berikut pada ```/etc/squid/squid.conf```.
+    
     ![image](https://user-images.githubusercontent.com/90237196/141643751-1d5cdb4c-2971-4b5b-acc7-7f05997b532a.png)
+    
     - Akses http://jualbelikapald11.com pada Loguetown.
 
 10. Transaksi jual beli tidak dilakukan setiap hari, oleh karena itu akses internet dibatasi hanya dapat diakses setiap hari Senin-Kamis pukul 07.00-11.00 dan setiap hari Selasa-Jum’at pukul 17.00-03.00 keesokan harinya (sampai Sabtu pukul 03.00)
     - Tambahkan konfigurasi berikut pada file ```/etc/squid/squid.conf```.
+    
     ![image](https://user-images.githubusercontent.com/90237196/141644719-0bc0dd91-70a5-4266-b5fd-b87f7820d484.png)
+    
     - Tambahkan konfigurasi berikut pada file ```/etc/squid/acl.conf```.
+    
     ![image](https://user-images.githubusercontent.com/90237196/141646928-6ab503d2-5210-4fa8-882b-cb501c7a46a0.png)
+    
     - Akses http://jualbelikapald11.com dengan command ```lynx jualbelikapald11.com```
+    
     ![image](https://user-images.githubusercontent.com/90237196/141645575-ae870d1b-62a3-4b94-8fde-119f6aede96c.png) 
 
 11. Agar transaksi bisa lebih fokus berjalan, maka dilakukan redirect website agar mudah mengingat website transaksi jual beli kapal. Setiap mengakses google.com, akan diredirect menuju super.franky.yyy.com dengan website yang sama pada soal shift modul 2. Web server super.franky.yyy.com berada pada node Skypie
