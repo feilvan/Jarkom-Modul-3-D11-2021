@@ -108,6 +108,8 @@ Anggota kelompok:
     - Tambahkan konfigurasi berikut pada file ```/etc/squid/squid.conf```.
     ![image](https://user-images.githubusercontent.com/90237196/141644719-0bc0dd91-70a5-4266-b5fd-b87f7820d484.png)
     - Tambahkan konfigurasi berikut pada file ```/etc/squid/acl.conf```.
-    - 
+    
+    - Akses http://jualbelikapald11.com dengan command ```lynx jualbelikapald11.com```
+    ![image](https://user-images.githubusercontent.com/90237196/141645575-ae870d1b-62a3-4b94-8fde-119f6aede96c.png) 
 
 11. Agar transaksi bisa lebih fokus berjalan, maka dilakukan redirect website agar mudah mengingat website transaksi jual beli kapal. Setiap mengakses google.com, akan diredirect menuju super.franky.yyy.com dengan website yang sama pada soal shift modul 2. Web server super.franky.yyy.com berada pada node Skypie
