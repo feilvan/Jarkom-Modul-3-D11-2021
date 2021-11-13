@@ -83,6 +83,14 @@ Anggota kelompok:
     ![image](https://user-images.githubusercontent.com/73324192/141603867-5009286a-0cff-419f-874e-5470338fc042.png)
     
 8. Loguetown digunakan sebagai client Proxy agar transaksi jual beli dapat terjamin keamanannya, juga untuk mencegah kebocoran data transaksi.Pada Loguetown, proxy harus bisa diakses dengan nama jualbelikapal.yyy.com dengan port yang digunakan adalah 5000.
+    - Install squid pada Water7.
+    - Tambahkan konfigurasi berikut pada ```/etc/squid/squid.conf```.
+      
+    - Restart squid.
+    - Aktifkan proxy pada Loguetown, kemudian cek apakah konfigurasi telah berhasil dengan ```env | grep -i proxy```.
+    
+    - Akses http://jualbelikapald11.com pada Loguetown.
+    
 
 9. Agar transaksi jual beli lebih aman dan pengguna website ada dua orang, proxy dipasang autentikasi user proxy dengan enkripsi MD5 dengan dua username, yaitu luffybelikapalyyy dengan password luffy_yyy dan zorobelikapalyyy dengan password zoro_yyy 
 
