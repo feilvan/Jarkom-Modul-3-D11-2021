@@ -123,3 +123,16 @@ Anggota kelompok:
     ![image](https://user-images.githubusercontent.com/90237196/141645575-ae870d1b-62a3-4b94-8fde-119f6aede96c.png) 
 
 11. Agar transaksi bisa lebih fokus berjalan, maka dilakukan redirect website agar mudah mengingat website transaksi jual beli kapal. Setiap mengakses google.com, akan diredirect menuju super.franky.yyy.com dengan website yang sama pada soal shift modul 2. Web server super.franky.yyy.com berada pada node Skypie
+    - Tambahkan konfigurasi berikut pada ```/etc/squid/squid.conf```.
+
+    ![image](https://user-images.githubusercontent.com/90237196/141647256-7e9ae56c-e581-4608-8ed3-4a74b4db55cf.png)
+
+    - Restart squid, kemudian akses google.com pada client.
+    
+    ![image](https://user-images.githubusercontent.com/90237196/141647283-dd3c4c1e-1774-423c-8348-10f70deba6a4.png)
+
+    - Maka, google.com akan terarahkan pada super.franky.d11.com
+
+    ![image](https://user-images.githubusercontent.com/90237196/141647298-4fd18de5-ae13-46e8-aeaf-1e8fce68e274.png)
+
+12. 
