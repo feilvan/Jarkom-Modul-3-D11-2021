@@ -105,5 +105,9 @@ Anggota kelompok:
     - Akses http://jualbelikapald11.com pada Loguetown.
 
 10. Transaksi jual beli tidak dilakukan setiap hari, oleh karena itu akses internet dibatasi hanya dapat diakses setiap hari Senin-Kamis pukul 07.00-11.00 dan setiap hari Selasa-Jum’at pukul 17.00-03.00 keesokan harinya (sampai Sabtu pukul 03.00)
+    - Tambahkan konfigurasi berikut pada file ```/etc/squid/squid.conf```.
+    ![image](https://user-images.githubusercontent.com/90237196/141644719-0bc0dd91-70a5-4266-b5fd-b87f7820d484.png)
+    - Tambahkan konfigurasi berikut pada file ```/etc/squid/acl.conf```.
+    - 
 
 11. Agar transaksi bisa lebih fokus berjalan, maka dilakukan redirect website agar mudah mengingat website transaksi jual beli kapal. Setiap mengakses google.com, akan diredirect menuju super.franky.yyy.com dengan website yang sama pada soal shift modul 2. Web server super.franky.yyy.com berada pada node Skypie
